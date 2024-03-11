@@ -7,6 +7,7 @@ import Password from './pages/Password';
 import Otpsuccess from './pages/Otpsuccess';
 import Home from './pages/Home';
 import CreateMail from './pages/CreateMail';
+import HomeComponent from './pages/HomeComponent';
 function App() {
   return (
     <div className="App">
@@ -16,7 +17,8 @@ function App() {
         <Route path='/password' element={<Password/>}></Route>
         <Route path='/otpsuccess' element={<Otpsuccess/>}></Route>
         <Route path='/home' element={<Home/>}></Route>
-        <Route path='/createmail' element={<CreateMail/>}></Route>
+        <Route path='/createmail' element={<CreateMail/>}></Route>  <Route path='/hc' element={<HomeComponent/>}></Route>
+
       </Routes>
   
       {/* <Otp/> */}

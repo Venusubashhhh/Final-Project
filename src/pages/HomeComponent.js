@@ -73,12 +73,11 @@ export default function HomeComponent() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  const storedEmail = localStorage.getItem('email');
 
   const fetchalldata = async () => {
-    const val = await sentMail.send(storedEmail);
+    const val = await sentMail.send('venusubash.r@codingmart.com');
     setSentMaildata(val);
-    const val2 = await receiveMail.send(storedEmail);
+    const val2 = await receiveMail.send('venusubash018@gmail.com');
     setInboxMail(val2);
   };
 
